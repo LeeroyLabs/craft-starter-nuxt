@@ -1,0 +1,7 @@
+.env
+/.idea
+/vendor
+.DS_Store
+templates/public/index.html
+web/dist
+node_modules

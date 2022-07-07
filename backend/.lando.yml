@@ -1,0 +1,26 @@
+name: craftnuxt
+recipe: lamp
+config:
+    webroot: web
+    php: '8.0'
+services:
+    mailhog:
+        type: mailhog
+        portforward: true
+        hogfrom:
+            - appserver
+    appserver:
+        type: php:8.0
+        build_as_root:
+            - composer install
+            - composer dump-autoload -a
+proxy:
+    mailhog:
+        - mail.craftnuxt.lndo.site
+
+tooling:
+    crafty:
+        service: appserver
+        description: Update your local with config and updates
+        dir: /app
+        cmd: ./scripts/crafty.sh

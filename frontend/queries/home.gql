@@ -1,0 +1,8 @@
+query homepage($siteId: [QueryArgument] = "1") {
+    entry(siteId: $siteId, section: "home") {
+        ... on home_home_Entry {
+            title
+            heroBannerText
+        }
+    }
+}

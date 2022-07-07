@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rules for apps assets for Vue.js
+    # Don't forget to specify your vue.config.js outputDir and assetsDir.
+    RewriteRule ^static/js/(.*)$ /dist/static/js/$1 [L]
+    RewriteRule ^static/css/(.*)$ /dist/static/css/$1 [L]
+    RewriteRule ^static/img/(.*)$ /dist/static/img/$1 [L]
+    RewriteRule ^static/fonts/(.*)$ /dist/static/fonts/$1 [L]
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "http://localhost:8080"
+</IfModule>

@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  ea0d69c2-91b9-475e-b207-6a5ed0f6b5b9: # Craftnuxt - FR
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  efa09259-ac52-405a-857b-5965c9fc0a89: # Craftnuxt
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+type: single

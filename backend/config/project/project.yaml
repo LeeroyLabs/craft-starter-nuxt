@@ -1,0 +1,27 @@
+dateModified: 1652987703
+email:
+  fromEmail: gaelp@leeroy.ca
+  fromName: Craftnuxt
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    b2c3cf04-c5bb-49f6-9d77-457787f0a4f9: Craftnuxt # Craftnuxt
+    b5cbb0ec-3107-4e8f-845d-2a0a3692d42e: Common # Common
+    b121c2a4-589e-4004-b99f-f5609a4a3adb: 'Public Schema' # Public Schema
+    b710eb84-81d1-4c5d-86eb-4a62be969805: Home # Home
+    bfd04c93-9f51-4fa7-b6ae-6125face5ba8: 'Hero banner text' # Hero banner text
+    d295ef52-0a77-4e6b-b720-d145eb12b10d: Home # Home
+    ea0d69c2-91b9-475e-b207-6a5ed0f6b5b9: 'Craftnuxt - FR' # Craftnuxt - FR
+    efa09259-ac52-405a-857b-5965c9fc0a89: Craftnuxt # Craftnuxt
+system:
+  edition: pro
+  live: true
+  name: Craftnuxt
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
