@@ -2,11 +2,6 @@ import { defineNuxtConfig } from 'nuxt';
 import en from './i18n/en.json';
 import fr from './i18n/fr.json';
 
-const messages = {
-    en,
-    fr,
-};
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     modules: ['nuxt-graphql-client', '@nuxtjs/i18n'],
@@ -21,9 +16,13 @@ export default defineNuxtConfig({
             },
         },
         vueI18n: {
+            legacy: false,
             locale: 'en',
             fallbackLocale: 'en',
-            messages,
+            messages: {
+                en,
+                fr,
+            },
         },
     },
 });
