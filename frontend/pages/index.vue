@@ -2,7 +2,9 @@
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
-const { data } = await useAsyncData('homepage', () => GqlHomepage({ siteId: t('siteId') }));
+const { data } = await useAsyncData(`homepage-${t('siteId')}`, () =>
+    GqlHomepage({ siteId: t('siteId') })
+);
 </script>
 
 <template>

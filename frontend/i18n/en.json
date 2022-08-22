@@ -2,5 +2,9 @@
     "siteId": "2",
     "homepage": {
         "title": "Hello"
+    },
+    "404": {
+        "title": "You're probably lost.",
+        "cta": "Go back to homepage"
     }
 }
