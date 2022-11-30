@@ -7,11 +7,11 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.6",
+    "nuxt": "3.0.0-rc.9",
     "sass": "^1.51.0"
   },
   "dependencies": {
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
-    "nuxt-graphql-client": "^0.0.32"
+    "nuxt-graphql-client": "^0.2.15"
   }
 }

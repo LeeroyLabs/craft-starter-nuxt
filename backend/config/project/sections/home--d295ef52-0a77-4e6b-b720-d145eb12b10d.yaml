@@ -2,6 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 handle: home
 name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   ea0d69c2-91b9-475e-b207-6a5ed0f6b5b9: # Craftnuxt - FR

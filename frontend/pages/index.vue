@@ -1,6 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+const route = useRoute().query;
+if (route.preview_token) {
+    useGqlHeaders({ 'X-Craft-Token': route.preview_token });
+}
+
 const { t } = useI18n();
 const { data } = await useAsyncData(`homepage-${t('siteId')}`, () =>
     GqlHomepage({ siteId: t('siteId') })

@@ -6,6 +6,17 @@ import fr from './i18n/fr.json';
 export default defineNuxtConfig({
     modules: ['nuxt-graphql-client', '@nuxtjs/i18n'],
     css: ['@/assets/styles/main.scss'],
+    publicRuntimeConfig: {
+        'graphql-client': {
+            clients: {
+                default: {
+                    token: {
+                        name: 'X-Craft-Token',
+                    },
+                },
+            },
+        },
+    },
     i18n: {
         locales: ['en', 'fr'],
         defaultLocale: 'en',
