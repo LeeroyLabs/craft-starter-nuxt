@@ -4,14 +4,15 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.9",
-    "sass": "^1.51.0"
+    "@nuxtjs/i18n": "^8.0.0-beta.6",
+    "nuxt": "3.0.0",
+    "sass": "^1.56.1"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
-    "nuxt-graphql-client": "^0.2.15"
+    "nuxt-graphql-client": "^0.2.17"
   }
 }

@@ -1,6 +1,4 @@
 <script setup>
-import { useI18n } from 'vue-i18n';
-
 const route = useRoute().query;
 if (route.preview_token) {
     useGqlHeaders({ 'X-Craft-Token': route.preview_token });
