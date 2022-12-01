@@ -6,13 +6,10 @@
     "italic",
     "unorderedlist",
     "orderedlist",
-    "link",
-    "image",
-    "video"
+    "link"
   ],
   "plugins": [
-    "fullscreen",
-    "video"
+    "fullscreen"
   ],
   "linkNewTab": true,
   "toolbarFixed": true

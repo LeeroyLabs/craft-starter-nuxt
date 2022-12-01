@@ -1,5 +1,4 @@
 <?php
-
 /**
  * General Configuration
  *
@@ -9,46 +8,29 @@
  * @see \craft\config\GeneralConfig
  */
 
+use craft\config\GeneralConfig;
 use craft\helpers\App;
 
-$isLocal = App::env('ENVIRONMENT') === 'local';
-$isProd = App::env('ENVIRONMENT') === 'production';
+$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
+$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
 
-return [
-    // Default Week Start Day (0 = Sunday, 1 = Monday...)
-    'defaultWeekStartDay' => 1,
-
-    // Whether generated URLs should omit "index.php"
-    'omitScriptNameInUrls' => true,
-
-    // The URI segment that tells Craft to load the control panel
-    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
-
-    // The secure key Craft will use for hashing and encrypting data
-    'securityKey' => App::env('SECURITY_KEY'),
-
-    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
-    'devMode' => $isLocal,
-
-    // Whether administrative changes should be allowed
-    'allowAdminChanges' => $isLocal,
-
-    // Whether crawlers should be allowed to index pages and following links
-    'disallowRobots' => !$isProd,
-
-    'preventUserEnumeration' => $isLocal,
-
-    'sendPoweredByHeader' => false,
-
-    'limitAutoSlugsToAscii' => true,
-
-    'overridePhpSessionLocation' => false,
-
-    'tokenParam' => 'preview_token',
-
-    'headlessMode' => true,
-
-    'aliases' => [
-        '@webroot' => dirname(__DIR__) . '/web',
-    ]
-];
+return GeneralConfig::create()
+    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
+    ->defaultWeekStartDay(1)
+    // Prevent generated URLs from including "index.php"
+    ->omitScriptNameInUrls()
+    // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+    ->devMode($isDev)
+    // Allow administrative changes
+    ->allowAdminChanges($isDev)
+    // Disallow robots
+    ->disallowRobots(!$isProd)
+    // Prevent user enumeration in the "forgot password" flow
+    ->preventUserEnumeration($isDev)
+    // Prevent the "X-Powered-By" header from being sent
+    ->sendPoweredByHeader(false)
+    // Allow only ASCII characters in generated slugs
+    ->limitAutoSlugsToAscii(true)
+    // Runs Craft in headless mode
+    ->headlessMode(true)
+;
