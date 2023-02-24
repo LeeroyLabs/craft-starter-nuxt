@@ -1,4 +1,5 @@
 <?php
+
 /**
  * General Configuration
  *
@@ -33,4 +34,8 @@ return GeneralConfig::create()
     ->limitAutoSlugsToAscii(true)
     // Runs Craft in headless mode
     ->headlessMode(true)
-;
+    // Aliases
+    ->aliases([
+        '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
+        '@webroot' => dirname(__DIR__) . '/web',
+    ]);
