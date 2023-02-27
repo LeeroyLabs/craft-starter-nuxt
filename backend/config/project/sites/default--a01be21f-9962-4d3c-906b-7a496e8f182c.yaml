@@ -1,9 +1,8 @@
 baseUrl: $PRIMARY_SITE_URL
-enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: Craftnuxt
+name: CraftNuxt
 primary: true
-siteGroup: b2c3cf04-c5bb-49f6-9d77-457787f0a4f9 # Craftnuxt
+siteGroup: 156732ef-82ce-46d1-876b-a3806c0036d2 # CraftNuxt
 sortOrder: 1

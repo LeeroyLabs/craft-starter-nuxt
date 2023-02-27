@@ -1,7 +1,8 @@
 fieldLayouts:
-  55ad1a38-e5b2-4ece-a4c3-f1f531059d10:
+  af7fe318-30d1-47c8-9456-726ab9ea51ec:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,24 +25,30 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c480073a-d794-4719-aaee-2972765e71da
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: bfd04c93-9f51-4fa7-b6ae-6125face5ba8 # Hero banner text
+            elementCondition: null
+            fieldUid: 60e23769-3d48-4610-a124-079d09aa8271 # Hero banner text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0828acc4-e63e-4a42-bacb-5da46ed049b9
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f02d381b-6af3-4e4c-ae8e-c7dae8b14c6f
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home
-section: d295ef52-0a77-4e6b-b720-d145eb12b10d # Home
+section: cbf0661a-f857-42b6-baca-0900b2b5d6a7 # Home
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

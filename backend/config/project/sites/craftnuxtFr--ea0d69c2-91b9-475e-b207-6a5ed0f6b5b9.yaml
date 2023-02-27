@@ -1,9 +1,0 @@
-baseUrl: /fr
-enabled: true
-handle: craftnuxtFr
-hasUrls: true
-language: fr-CA
-name: 'Craftnuxt - FR'
-primary: false
-siteGroup: b2c3cf04-c5bb-49f6-9d77-457787f0a4f9 # Craftnuxt
-sortOrder: 2

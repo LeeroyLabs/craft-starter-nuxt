@@ -1,0 +1,8 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.a01be21f-9962-4d3c-906b-7a496e8f182c:read' # CraftNuxt
+  - 'sections.cbf0661a-f857-42b6-baca-0900b2b5d6a7:read' # Home
+  - 'entrytypes.b5a47a4c-a050-46a2-a4e2-627eb52898b5:read' # Home
+  - 'sections.cbf0661a-f857-42b6-baca-0900b2b5d6a7:edit' # Home
+  - 'entrytypes.b5a47a4c-a050-46a2-a4e2-627eb52898b5:save' # Home

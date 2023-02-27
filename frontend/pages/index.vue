@@ -16,7 +16,7 @@ const { data } = await useAsyncData(`homepage-${t('siteId')}`, () =>
             <Title>Main page</Title>
         </Head>
 
-        <h1>{{ data.entry.heroBannerText }}</h1>
+        <h1>{{ data.entry?.heroBannerText }}</h1>
 
         <p>{{ $t('homepage.title') }}</p>
     </div>

@@ -1,19 +1,19 @@
-columnSuffix: jmdfwlvz
+columnSuffix: kcomecgw
 contentColumnType: text
-fieldGroup: b5cbb0ec-3107-4e8f-845d-2a0a3692d42e # Common
+fieldGroup: b42af606-7e4a-44cd-97a9-111769690a10 # Common
 handle: heroBannerText
-instructions: ''
+instructions: null
 name: 'Hero banner text'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: site
+translationMethod: language
 type: craft\fields\PlainText
