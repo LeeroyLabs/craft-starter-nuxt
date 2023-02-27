@@ -8,11 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "^8.0.0-beta.6",
-    "nuxt": "3.0.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.10",
+    "nuxt": "^3.2.2",
     "sass": "^1.56.1"
   },
   "dependencies": {
-    "nuxt-graphql-client": "^0.2.17"
+    "nuxt-graphql-client": "^0.2.24"
   }
 }
