@@ -1,0 +1,11 @@
+{
+    "name": "leeroy/craft-starter-nuxt",
+    "description": "Craft CMS starter in headless with DDEV and Nuxt 3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gaël Patron",
+            "email": "gaelp@leeroy.ca"
+        }
+    ]
+}

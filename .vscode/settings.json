@@ -1,0 +1,28 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "eslint.validate": ["javascript", "vue"],
+    "eslint.workingDirectories": [ "./frontend"],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "scss.scannerExclude": ["**/.git", "**/node_modules", "**/bower_components", "**/vendor"],
+    "stylelint.enable": true,
+    "stylelint.packageManager": "yarn",
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+}
